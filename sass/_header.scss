@@ -1,0 +1,104 @@
+.header-list {
+    display: flex;
+}
+.site-nav {
+    display: flex;
+}
+.header-navigation {
+    display: flex; 
+    align-items: center;
+}
+.header-container {
+    display: flex; 
+    align-items: center;
+}
+.header {
+    border-bottom: 1px solid #ECECEC;
+}
+.header-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--main-text-color);
+    padding-bottom: 32px;
+    padding-top: 32px;
+    transition: color var(--transition-duration) var(--timing-function);
+    position: relative;
+}
+
+.header-link.active::after {
+    content: "";
+    width: 100%;
+    height: 4px;
+    background-color: var(--header-nav-text-color);
+    border-radius: 2px;
+    display: block;
+    position: absolute;
+    bottom: 0;
+}
+.header-logo {
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color:var(--header-nav-text-color);
+}
+.header-logo-color {
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color:var(--header-text-color);   
+}
+.header-link:hover,
+.header-link:focus {
+    color: var(--header-nav-text-color);
+}
+.color-icon:hover,
+.color-icon:focus {
+    color: var(--header-nav-text-color);
+}
+.header-connect {
+    margin-left: auto;
+}
+.head-logo {
+    margin-right: 90px;
+    padding: 24px 25px;
+}
+.header-item:not(:last-child) {
+    margin-right: 50px; 
+}
+.header-tel {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color:var(--header-second-text-color);
+    display: flex;
+    align-items: center;
+    transition: color var(--transition-duration) var(--timing-function);
+}
+.header-mail {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--second-text-color);
+    display: flex;
+    align-items: center;
+    transition: color var(--transition-duration) var(--timing-function);
+}
+.icon-envelope,
+.icon-smartphone {
+margin-right: 10px;
+fill: currentColor;
+}
+.icon-envelope:hover,
+.icon-smartphone:hover,
+.icon-envelope:focus,
+.icon-smartphone:focus {
+fill: currentColor;
+}
