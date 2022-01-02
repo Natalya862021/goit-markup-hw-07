@@ -1,0 +1,60 @@
+.footer-form {
+    display: flex;
+}
+.subscription {
+    margin-left: 93px;
+    margin-bottom: 20px;
+    color: var(--main-title-color);
+    font-weight: bold;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: left;
+}
+.email-input {
+    width: 358px;
+    height: 50px;
+    padding-left: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-right: 12px;
+    margin-left: 93px;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    display: flex;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.6);
+    background: var(--hero-section-color);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+}
+.send-btn {
+    width: 200px;
+    height: 50px;
+    margin: 0;
+    padding-right: 29px;
+    padding-right: 62px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    position: relative;
+    align-items: center;
+    background: var(--main-btn-color);
+    color: var(--main-title-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+.icon-send {
+    position: absolute;
+    left: 148px;
+    top: 50%;
+    transform: translateY(-50%);
+}
