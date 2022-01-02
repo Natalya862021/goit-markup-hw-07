@@ -25,9 +25,8 @@
     padding-top: 32px;
     transition: color var(--transition-duration) var(--timing-function);
     position: relative;
-}
 
-.header-link.active::after {
+    &.active::after {
     content: "";
     width: 100%;
     height: 4px;
@@ -36,6 +35,11 @@
     display: block;
     position: absolute;
     bottom: 0;
+    }
+
+    &:hover, &:focus {
+    color: var(--header-nav-text-color);
+    }
 }
 .header-logo {
     font-family: Raleway;
@@ -53,13 +57,10 @@
     letter-spacing: 0.03em;
     color:var(--header-text-color);   
 }
-.header-link:hover,
-.header-link:focus {
+.color-icon {
+    &:hover, &:focus {
     color: var(--header-nav-text-color);
-}
-.color-icon:hover,
-.color-icon:focus {
-    color: var(--header-nav-text-color);
+    }
 }
 .header-connect {
     margin-left: auto;
@@ -91,14 +92,19 @@
     align-items: center;
     transition: color var(--transition-duration) var(--timing-function);
 }
-.icon-envelope,
-.icon-smartphone {
-margin-right: 10px;
-fill: currentColor;
+.icon-envelope {
+    margin-right: 10px;
+    fill: currentColor;
+
+    &:hover, &:focus {
+    fill: currentColor;
+    }
 }
-.icon-envelope:hover,
-.icon-smartphone:hover,
-.icon-envelope:focus,
-.icon-smartphone:focus {
-fill: currentColor;
+.icon-smartphone {
+    margin-right: 10px;
+    fill: currentColor;
+
+    &:hover, &:focus {
+    fill: currentColor;
+    }
 }

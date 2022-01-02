@@ -106,6 +106,10 @@ body {
   bottom: 0;
 }
 
+.header-link:hover, .header-link:focus {
+  color: var(--header-nav-text-color);
+}
+
 .header-logo {
   font-family: Raleway;
   font-weight: 700;
@@ -124,13 +128,7 @@ body {
   color: var(--header-text-color);
 }
 
-.header-link:hover,
-.header-link:focus {
-  color: var(--header-nav-text-color);
-}
-
-.color-icon:hover,
-.color-icon:focus {
+.color-icon:hover, .color-icon:focus {
   color: var(--header-nav-text-color);
 }
 
@@ -179,16 +177,21 @@ body {
   transition: color var(--transition-duration) var(--timing-function);
 }
 
-.icon-envelope,
+.icon-envelope {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.icon-envelope:hover, .icon-envelope:focus {
+  fill: currentColor;
+}
+
 .icon-smartphone {
   margin-right: 10px;
   fill: currentColor;
 }
 
-.icon-envelope:hover,
-.icon-smartphone:hover,
-.icon-envelope:focus,
-.icon-smartphone:focus {
+.icon-smartphone:hover, .icon-smartphone:focus {
   fill: currentColor;
 }
 
@@ -317,10 +320,6 @@ body {
   margin-top: 50px;
 }
 
-.features-img:not(:last-child) {
-  margin-right: 30px;
-}
-
 .work-title {
   position: absolute;
   width: 100%;
@@ -331,6 +330,10 @@ body {
 
 .features-img {
   position: relative;
+}
+
+.features-img:not(:last-child) {
+  margin-right: 30px;
 }
 
 .title-text {
@@ -411,6 +414,10 @@ body {
   height: 44px;
 }
 
+.masters-sotial-item + .masters-sotial-item {
+  margin-left: 10px;
+}
+
 .masters-sotial-link {
   width: 100%;
   height: 100%;
@@ -428,6 +435,14 @@ body {
   transition: background-color var(--transition-duration) var(--timing-function);
 }
 
+.masters-sotial-link:hover, .masters-sotial-link:focus {
+  background-color: var(--main-btn-color);
+}
+
+.masters-sotial-link:hover .icon, .masters-sotial-link:focus .icon {
+  fill: var(--main-title-color);
+}
+
 .masters-sotial-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -438,24 +453,10 @@ body {
   margin-top: 16px;
 }
 
-.masters-sotial-item + .masters-sotial-item {
-  margin-left: 10px;
-}
-
 .icon {
   fill: #afb1b8;
   -webkit-transition: fill var(--transition-duration) var(--timing-function);
   transition: fill var(--transition-duration) var(--timing-function);
-}
-
-.masters-sotial-link:hover,
-.masters-sotial-link:focus {
-  background-color: var(--main-btn-color);
-}
-
-.masters-sotial-link:hover .icon,
-.masters-sotial-link:focus .icon {
-  fill: var(--main-title-color);
 }
 
 .clients-item {
@@ -487,6 +488,15 @@ body {
   transition: fill var(--transition-duration) var(--timing-function);
 }
 
+.clients-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .icon-company {
   width: 100%;
   height: 100%;
@@ -503,22 +513,11 @@ body {
   border: 1px solid #afb1b8;
 }
 
-.clients-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.icon-company:hover,
-.icon-company:focus {
+.icon-company:hover, .icon-company:focus {
   border-color: var(--main-btn-color);
 }
 
-.icon-company:hover .company,
-.icon-company:focus .company {
+.icon-company:hover .company, .icon-company:focus .company {
   fill: var(--main-btn-color);
 }
 
@@ -545,8 +544,7 @@ body {
   transition: background-color var(--transition-duration) var(--timing-function), color var(--transition-duration) var(--timing-function), box-shadow var(--transition-duration) var(--timing-function), -webkit-box-shadow var(--transition-duration) var(--timing-function);
 }
 
-.btn-text:hover,
-.btn-text:focus {
+.btn-text:hover, .btn-text:focus {
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   color: var(--main-title-color);
@@ -592,6 +590,16 @@ body {
   height: auto;
 }
 
+.portfolio-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-right: calc(-1 * var(--portfolio-card-gap));
+  margin-bottom: calc(-1 * var(--portfolio-card-gap));
+}
+
 .portfolio-main > .portfolio-list {
   -ms-flex-preferred-size: calc((100% - 3 * 30px) / 3);
       flex-basis: calc((100% - 3 * 30px) / 3);
@@ -604,16 +612,6 @@ body {
   transition: -webkit-box-shadow var(--transition-duration) var(--timing-function);
   transition: box-shadow var(--transition-duration) var(--timing-function);
   transition: box-shadow var(--transition-duration) var(--timing-function), -webkit-box-shadow var(--transition-duration) var(--timing-function);
-}
-
-.portfolio-main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin-right: calc(-1 * var(--portfolio-card-gap));
-  margin-bottom: calc(-1 * var(--portfolio-card-gap));
 }
 
 .portfolio-content {
@@ -668,8 +666,7 @@ body {
   transition: transform var(--transition-duration) var(--timing-function), -webkit-transform var(--transition-duration) var(--timing-function);
 }
 
-.portfolio-link:hover .portfolio-wrapper,
-.portfolio-link:focus .portfolio-wrapper {
+.portfolio-link:hover .portfolio-wrapper, .portfolio-link:focus .portfolio-wrapper {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
@@ -735,8 +732,7 @@ body {
   transition: background-color var(--transition-duration) var(--timing-function);
 }
 
-.social-networks-link:hover,
-.social-networks-link:focus {
+.social-networks-link:hover, .social-networks-link:focus {
   background-color: var(--main-btn-color);
 }
 
@@ -755,13 +751,13 @@ body {
   margin-top: 20px;
 }
 
-.footer-second:not(:last-child) {
-  margin-bottom: 9px;
-}
-
 .footer-second {
   -webkit-transition: color var(--transition-duration) var(--timing-function);
   transition: color var(--transition-duration) var(--timing-function);
+}
+
+.footer-second:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .footer-section {
@@ -815,8 +811,7 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-link:hover,
-.footer-link:focus {
+.footer-link:hover, .footer-link:focus {
   color: var(--header-nav-text-color);
 }
 
@@ -946,9 +941,6 @@ body {
   right: 8px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-}
-
-.modal-btn {
   -webkit-transition: fill var(--transition-duration) var(--timing-function);
   transition: fill var(--transition-duration) var(--timing-function);
 }
@@ -988,6 +980,14 @@ body {
           box-sizing: border-box;
   -webkit-transition: border-color var(--transition-duration) var(--timing-function);
   transition: border-color var(--transition-duration) var(--timing-function);
+}
+
+.modal-form-input:focus {
+  border: 1px solid var(--main-btn-color);
+}
+
+.modal-form-input:focus + .form-svg {
+  fill: var(--main-btn-color);
 }
 
 .form-input-text {
@@ -1042,6 +1042,10 @@ body {
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
+}
+
+.modal-form-text:focus {
+  border: 1px solid var(--main-btn-color);
 }
 
 .agreement-checkbox {
@@ -1104,6 +1108,14 @@ body {
   position: absolute;
 }
 
+.checkbox:checked + .checkbox-icon {
+  border-color: var(--main-btn-color);
+  background-color: var(--main-btn-color);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-origin: border-box;
+}
+
 .checkbox-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1114,18 +1126,6 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.modal-form-input:focus + .form-svg {
-  fill: var(--main-btn-color);
-}
-
-.modal-form-input:focus {
-  border: 1px solid var(--main-btn-color);
-}
-
-.modal-form-text:focus {
-  border: 1px solid var(--main-btn-color);
 }
 
 .checkbox-icon {
@@ -1144,14 +1144,6 @@ body {
           align-items: center;
   -webkit-transition: border-color var(--transition-duration) var(--timing-function), background-color var(--transition-duration) var(--timing-function);
   transition: border-color var(--transition-duration) var(--timing-function), background-color var(--transition-duration) var(--timing-function);
-}
-
-.checkbox:checked + .checkbox-icon {
-  border-color: var(--main-btn-color);
-  background-color: var(--main-btn-color);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-origin: border-box;
 }
 
 .agreement-text {

@@ -14,9 +14,6 @@
     display: flex;
     margin-top: 50px;
 }
-.features-img:not(:last-child) {
-    margin-right: 30px;
-}
 .work-title {
     position: absolute;
     width: 100%;
@@ -26,6 +23,10 @@
 }
 .features-img {
     position: relative;
+
+    &:not(:last-child) {
+    margin-right: 30px;
+    }
 }
 .title-text {
     font-weight: bold;

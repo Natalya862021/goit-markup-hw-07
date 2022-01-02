@@ -1,21 +1,24 @@
 .clients-item {
     box-sizing: border-box;
     border-radius: 4px;
-
     width: 170px;
     height: 92px;
-
     display: flex;
     align-items: center;
     justify-content: center;
-}
-.clients-item + .clients-item {
+
+    + .clients-item {
     margin-left: 30px;
     transition: border-color var(--transition-duration) var(--timing-function);
+    }
 }
 .company {
 fill: #afb1b8;
 transition: fill var(--transition-duration) var(--timing-function);
+}
+.clients-list {
+    display: flex;
+    justify-content: center;
 }
 .icon-company {
     width: 100%;
@@ -25,16 +28,12 @@ transition: fill var(--transition-duration) var(--timing-function);
     align-items: center;
     justify-content: center;
     border: 1px solid #afb1b8;
-}
-.clients-list {
-    display: flex;
-    justify-content: center;
-}
-.icon-company:hover,
-.icon-company:focus {
-    border-color:var(--main-btn-color) ;
-}
-.icon-company:hover .company ,
-.icon-company:focus .company {
-    fill:var(--main-btn-color);
+
+    &:hover, &:focus {
+    border-color: var(--main-btn-color);
+    }
+
+    &:hover .company, &:focus .company {
+    fill: var(--main-btn-color);
+    }
 }

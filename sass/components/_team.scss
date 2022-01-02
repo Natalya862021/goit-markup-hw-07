@@ -11,13 +11,13 @@
     margin-right: 30px;
     text-align: center;
     width: 270px;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     background-color: var(--main-title-color);
-}
-.masters-item:nth-child(4n){
+
+    &:nth-child(4n) {
     margin-right: 0;
+    }
 }
 .masters-name {
     padding-top: 30px;
@@ -50,6 +50,10 @@
 .masters-sotial-item {
     width: 44px;
     height: 44px;
+
+    + .masters-sotial-item {
+    margin-left: 10px;
+    }
 }
 .masters-sotial-link {
     width: 100%;
@@ -59,24 +63,21 @@
     align-items: center;
     justify-content: center;
     transition: background-color var(--transition-duration) var(--timing-function);
+
+    &:hover, &:focus {
+    background-color: var(--main-btn-color);
+    }
+
+    &:hover .icon, &:focus .icon {
+    fill: var(--main-title-color);
+    }
 }
 .masters-sotial-list {
     display: flex;
     justify-content: center;
     margin-top: 16px;
 }
-.masters-sotial-item + .masters-sotial-item {
-    margin-left: 10px;
-}
 .icon {
     fill: #afb1b8;
     transition: fill var(--transition-duration) var(--timing-function);
-}
-.masters-sotial-link:hover,
-.masters-sotial-link:focus {
-    background-color:var(--main-btn-color);
-}
-.masters-sotial-link:hover .icon,
-.masters-sotial-link:focus .icon {
-    fill: var(--main-title-color);
 }
