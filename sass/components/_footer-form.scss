@@ -11,7 +11,7 @@
     text-transform: uppercase;
     text-align: left;
 }
-.email-input {
+.footer-form__input {
     width: 358px;
     height: 50px;
     padding-left: 16px;
@@ -31,7 +31,7 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
 }
-.send-btn {
+.footer-form__btn {
     width: 200px;
     height: 50px;
     margin: 0;
@@ -52,7 +52,7 @@
     border: 1px solid transparent;
     cursor: pointer;
 }
-.icon-send {
+.footer-form__icon {
     position: absolute;
     left: 148px;
     top: 50%;

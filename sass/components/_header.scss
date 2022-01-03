@@ -15,7 +15,7 @@
 .header {
     border-bottom: 1px solid #ECECEC;
 }
-.header-link {
+.header__link {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -69,10 +69,10 @@
     margin-right: 90px;
     padding: 24px 25px;
 }
-.header-item:not(:last-child) {
+.header__list:not(:last-child) {
     margin-right: 50px; 
 }
-.header-tel {
+.header__tel {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -82,7 +82,7 @@
     align-items: center;
     transition: color var(--transition-duration) var(--timing-function);
 }
-.header-mail {
+.header__mail {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -92,15 +92,7 @@
     align-items: center;
     transition: color var(--transition-duration) var(--timing-function);
 }
-.icon-envelope {
-    margin-right: 10px;
-    fill: currentColor;
-
-    &:hover, &:focus {
-    fill: currentColor;
-    }
-}
-.icon-smartphone {
+.header__icon {
     margin-right: 10px;
     fill: currentColor;
 

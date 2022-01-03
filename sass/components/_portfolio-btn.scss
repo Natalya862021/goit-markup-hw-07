@@ -2,7 +2,7 @@
     padding-top: 94px;
     padding-bottom: 94px;
 }
-.filter-btn {
+.portfolio__btn {
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -25,21 +25,7 @@
     background-color: var(--main-btn-color);
     }
 }
-.portfolio-list-title {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-    color:var(--second-title-color);
-    margin-bottom: 4px;
-}
-.portfolio-list-text {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.03em;
-    color:var(--second-text-color);
-}
+
 .filter-list {
     display: flex;
     margin-left: auto;
@@ -47,6 +33,6 @@
     justify-content: center;
     margin-bottom: 50px;
 }
-.portfolio-btn:not(:last-child) {
+.portfolio__item:not(:last-child) {
     margin-right: 8px;
 }
