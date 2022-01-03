@@ -5,7 +5,7 @@
     background-color: #2F303A;
     
 }
-.hero-img {
+.hero__img {
     height: 600px;
     max-width: 1600px;
     margin-left: auto;
@@ -20,7 +20,7 @@
     background-size: cover;
     background-position: center;
 }
-.hero-title {
+.hero__text {
     font-weight: 900;
     text-transform: uppercase;
     font-size: 44px;
@@ -34,7 +34,7 @@
     margin-left: auto;
     margin-right: auto;
 }
-.hero-button {
+.hero__button {
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;

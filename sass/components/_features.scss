@@ -14,21 +14,21 @@
     display: flex;
     margin-top: 50px;
 }
-.work-title {
+.work__title {
     position: absolute;
     width: 100%;
     min-height: 70px;
     bottom: 0;
     background-color: rgba(47, 48, 58, 0.8);
 }
-.features-img {
+.features__card {
     position: relative;
 
     &:not(:last-child) {
     margin-right: 30px;
     }
 }
-.title-text {
+.title__text {
     font-weight: bold;
     line-height: 1.14;
     text-align: center;
